@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- TailwindCSS Test Card -->
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center py-12 px-4">
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+        
+        <!-- Header -->
+        <div class="bg-primary px-6 py-4">
+            <h1 class="text-2xl font-bold text-white">🎨 TailwindCSS Test</h1>
+            <p class="text-blue-100 text-sm">If you see colors & rounded corners, it works!</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="p-6 space-y-4">
+            
+            <!-- Status Badge -->
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800">
+                    ✅ Active
+                </span>
+                <span class="text-slate-600">TailwindCSS is working</span>
+            </div>
+            
+            <!-- Color Palette Preview -->
+            <div class="grid grid-cols-5 gap-2">
+                <div class="h-8 rounded bg-primary" title="primary"></div>
+                <div class="h-8 rounded bg-secondary" title="secondary"></div>
+                <div class="h-8 rounded bg-success" title="success"></div>
+                <div class="h-8 rounded bg-warning" title="warning"></div>
+                <div class="h-8 rounded bg-danger" title="danger"></div>
+            </div>
+            
+            <!-- Buttons Preview -->
+            <div class="flex flex-wrap gap-2 pt-2">
+                <button class="btn-primary">Primary</button>
+                <button class="btn-secondary">Secondary</button>
+                <button class="btn-success">Success</button>
+                <button class="btn-danger">Danger</button>
+            </div>
+            
+            <!-- Form Preview -->
+            <div class="pt-4 border-t border-slate-200">
+                <label class="label-field">Test Input</label>
+                <input type="text" class="input-field" placeholder="Type something..." />
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-slate-50 px-6 py-3 border-t border-slate-200">
+            <p class="text-xs text-slate-500">
+                DindPoint v1.0 • Built with ASP.NET Core 8 + TailwindCSS
+            </p>
+        </div>
+        
+    </div>
+</div>

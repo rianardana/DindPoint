@@ -1,0 +1,15 @@
+V:\Rian\Code\DindPoint\DindPoint.Application\bin\Debug\net8.0\DindPoint.Application.deps.json
+V:\Rian\Code\DindPoint\DindPoint.Application\bin\Debug\net8.0\DindPoint.Application.dll
+V:\Rian\Code\DindPoint\DindPoint.Application\bin\Debug\net8.0\DindPoint.Application.pdb
+V:\Rian\Code\DindPoint\DindPoint.Application\bin\Debug\net8.0\DindPoint.Domain.dll
+V:\Rian\Code\DindPoint\DindPoint.Application\bin\Debug\net8.0\DindPoint.Domain.pdb
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.csproj.AssemblyReference.cache
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.GeneratedMSBuildEditorConfig.editorconfig
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.AssemblyInfoInputs.cache
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.AssemblyInfo.cs
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.csproj.CoreCompileInputs.cache
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoin.82239979.Up2Date
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.dll
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\refint\DindPoint.Application.dll
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\DindPoint.Application.pdb
+V:\Rian\Code\DindPoint\DindPoint.Application\obj\Debug\net8.0\ref\DindPoint.Application.dll

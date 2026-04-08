@@ -1,0 +1,11 @@
+V:\Rian\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.deps.json
+V:\Rian\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.dll
+V:\Rian\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.pdb
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.GeneratedMSBuildEditorConfig.editorconfig
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.AssemblyInfoInputs.cache
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.AssemblyInfo.cs
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.csproj.CoreCompileInputs.cache
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.dll
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\refint\DindPoint.Domain.dll
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.pdb
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\ref\DindPoint.Domain.dll
