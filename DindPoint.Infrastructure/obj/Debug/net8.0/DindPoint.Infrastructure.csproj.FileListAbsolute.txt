@@ -17,3 +17,4 @@ V:\Rian\Code\DindPoint\DindPoint.Infrastructure\obj\Debug\net8.0\refint\DindPoin
 V:\Rian\Code\DindPoint\DindPoint.Infrastructure\obj\Debug\net8.0\DindPoint.Infrastructure.pdb
 V:\Rian\Code\DindPoint\DindPoint.Infrastructure\obj\Debug\net8.0\DindPoint.Infrastructure.genruntimeconfig.cache
 V:\Rian\Code\DindPoint\DindPoint.Infrastructure\obj\Debug\net8.0\ref\DindPoint.Infrastructure.dll
+V:\Rian\Code\DindPoint\DindPoint.Infrastructure\obj\Debug\net8.0\DindPoint.Infrastructure.sourcelink.json

@@ -9,3 +9,4 @@ V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.dll
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\refint\DindPoint.Domain.dll
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.pdb
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\ref\DindPoint.Domain.dll
+V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.sourcelink.json

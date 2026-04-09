@@ -169,3 +169,4 @@ V:\Rian\Code\DindPoint\DindPoint.Web\obj\Debug\net8.0\refint\DindPoint.Web.dll
 V:\Rian\Code\DindPoint\DindPoint.Web\obj\Debug\net8.0\DindPoint.Web.pdb
 V:\Rian\Code\DindPoint\DindPoint.Web\obj\Debug\net8.0\DindPoint.Web.genruntimeconfig.cache
 V:\Rian\Code\DindPoint\DindPoint.Web\obj\Debug\net8.0\ref\DindPoint.Web.dll
+V:\Rian\Code\DindPoint\DindPoint.Web\obj\Debug\net8.0\DindPoint.Web.sourcelink.json
