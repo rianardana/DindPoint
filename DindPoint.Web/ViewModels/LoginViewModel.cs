@@ -4,8 +4,8 @@ namespace DindPoint.Web.ViewModels;
 
 public class LoginViewModel
 {
-    [Required(ErrorMessage = "Username atau Email wajib diisi")]
-    public string UserNameOrEmail { get; set; } = string.Empty;
+    [Required(ErrorMessage = "Username wajib diisi")]
+    public string UserName { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Password wajib diisi")]
     [DataType(DataType.Password)]
