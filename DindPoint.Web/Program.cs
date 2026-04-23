@@ -3,6 +3,7 @@ using DindPoint.Application;
 using Microsoft.EntityFrameworkCore;
 using DindPoint.Application.Interfaces;
 using DindPoint.Infrastructure.Repositories;
+using DindPoint.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,14 +23,11 @@ builder.Services.AddSession(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
 // Add DbContext dengan SQL Server
-// builder.Services.AddDbContext<AppDbContext>(options =>
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register Services (tanpa MediatR)
-// builder.Services.AddApplicationServices();
-// builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddScoped<IAccountService, AccountService>();
 
-// Add AutoMapper
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();

@@ -20,11 +20,7 @@ public partial class AppDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        if (!optionsBuilder.IsConfigured)
-        {
-            var connectionString = @"Server=.\sqlexpress;Database=DindPoint;User Id=sa;Password=.*Locked24;TrustServerCertificate=True;MultipleActiveResultSets=true;";
-            optionsBuilder.UseSqlServer(connectionString, b => b.MigrationsAssembly("DindPoint.Infrastructure"));
-        }
+      
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

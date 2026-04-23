@@ -181,9 +181,9 @@ D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\DindPoint.Web.runtimeconfig.jso
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\DindPoint.Web.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\DindPoint.Web.pdb
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\AutoMapper.dll
-D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\Azure.Core.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\Azure.Identity.dll
+D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\Humanizer.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Code\DindPoint\DindPoint.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
