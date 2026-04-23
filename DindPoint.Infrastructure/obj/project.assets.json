@@ -4158,11 +4158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Rian\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj",
       "projectName": "DindPoint.Infrastructure",
-      "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj",
+      "projectPath": "D:\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\rian.ardana\\.nuget\\packages\\",
-      "outputPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Infrastructure\\obj\\",
+      "outputPath": "D:\\Code\\DindPoint\\DindPoint.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rian.ardana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4179,11 +4179,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "V:\\Rian\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj": {
-              "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj"
+            "D:\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj": {
+              "projectPath": "D:\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj"
             },
-            "V:\\Rian\\Code\\DindPoint\\DindPoint.Domain\\DindPoint.Domain.csproj": {
-              "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Domain\\DindPoint.Domain.csproj"
+            "D:\\Code\\DindPoint\\DindPoint.Domain\\DindPoint.Domain.csproj": {
+              "projectPath": "D:\\Code\\DindPoint\\DindPoint.Domain\\DindPoint.Domain.csproj"
             }
           }
         }

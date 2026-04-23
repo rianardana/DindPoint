@@ -10,3 +10,15 @@ V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\refint\DindPoint.Domain
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.pdb
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\ref\DindPoint.Domain.dll
 V:\Rian\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.sourcelink.json
+D:\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.deps.json
+D:\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.dll
+D:\Code\DindPoint\DindPoint.Domain\bin\Debug\net8.0\DindPoint.Domain.pdb
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.AssemblyInfoInputs.cache
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.AssemblyInfo.cs
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.csproj.CoreCompileInputs.cache
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.sourcelink.json
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.dll
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\refint\DindPoint.Domain.dll
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\DindPoint.Domain.pdb
+D:\Code\DindPoint\DindPoint.Domain\obj\Debug\net8.0\ref\DindPoint.Domain.dll

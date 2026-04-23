@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UpDEDORF36c=",
+  "dgSpecHash": "OEMNM7OFb/M=",
   "success": true,
-  "projectFilePath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
+  "projectFilePath": "D:\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rian.ardana\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -31,8 +31,8 @@
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.25\\microsoft.entityframeworkcore.design.8.0.25.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.25\\microsoft.entityframeworkcore.relational.8.0.25.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.25\\microsoft.entityframeworkcore.sqlserver.8.0.25.nupkg.sha512",
-    "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\rian.ardana\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.0\\microsoft.extensions.configuration.fileextensions.9.0.0.nupkg.sha512",
@@ -97,6 +97,16 @@
     "C:\\Users\\rian.ardana\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DindPoint.Web depends on Microsoft.Extensions.Caching.Memory (>= 8.0.25) but Microsoft.Extensions.Caching.Memory 8.0.25 was not found. An approximate best match of Microsoft.Extensions.Caching.Memory 9.0.0 was resolved.",
+      "libraryId": "Microsoft.Extensions.Caching.Memory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1603",
       "level": "Warning",

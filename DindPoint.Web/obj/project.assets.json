@@ -649,10 +649,10 @@
           }
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+      "Microsoft.Extensions.Caching.Abstractions/9.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
+          "Microsoft.Extensions.Primitives": "9.0.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
@@ -665,17 +665,17 @@
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/8.0.1": {
+      "Microsoft.Extensions.Caching.Memory/9.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0",
+          "Microsoft.Extensions.Primitives": "9.0.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -688,7 +688,7 @@
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.0": {
@@ -2694,10 +2694,10 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-      "sha512": "3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
+    "Microsoft.Extensions.Caching.Abstractions/9.0.0": {
+      "sha512": "FPWZAa9c0H4dvOj351iR1jkUIs4u9ykL4Bm592yhjDyO5lCoWd+TMAHx2EMbarzUvCvgjWjJIoC6//Q9kH6YhA==",
       "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/8.0.0",
+      "path": "microsoft.extensions.caching.abstractions/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2707,27 +2707,25 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
         "microsoft.extensions.caching.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Caching.Memory/8.0.1": {
-      "sha512": "HFDnhYLccngrzyGgHkjEDU5FMLn4MpOsr5ElgsBMC4yx6lJh4jeWO7fHS8+TXPq+dgxCmUa/Trl8svObmwW4QA==",
+    "Microsoft.Extensions.Caching.Memory/9.0.0": {
+      "sha512": "zbnPX/JQ0pETRSUG9fNPBvpIq42Aufvs15gGYyNIMhCun9yhmWihz0WgsI7bSDPjxWTKBf8oX/zv6v2uZ3W9OQ==",
       "type": "package",
-      "path": "microsoft.extensions.caching.memory/8.0.1",
+      "path": "microsoft.extensions.caching.memory/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2737,19 +2735,17 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/Microsoft.Extensions.Caching.Memory.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.targets",
         "lib/net462/Microsoft.Extensions.Caching.Memory.dll",
         "lib/net462/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net6.0/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net7.0/Microsoft.Extensions.Caching.Memory.xml",
         "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/net8.0/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/net9.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net9.0/Microsoft.Extensions.Caching.Memory.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+        "microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4649,8 +4645,8 @@
       "DindPoint.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Session >= 2.3.9",
       "Microsoft.EntityFrameworkCore >= 8.0.25",
-      "Microsoft.EntityFrameworkCore.Design >= 8.0.*",
-      "Microsoft.Extensions.Caching.Memory >= 8.0.*"
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.25",
+      "Microsoft.Extensions.Caching.Memory >= 8.0.25"
     ]
   },
   "packageFolders": {
@@ -4659,11 +4655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Rian\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
+      "projectUniqueName": "D:\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
       "projectName": "DindPoint.Web",
-      "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
+      "projectPath": "D:\\Code\\DindPoint\\DindPoint.Web\\DindPoint.Web.csproj",
       "packagesPath": "C:\\Users\\rian.ardana\\.nuget\\packages\\",
-      "outputPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Web\\obj\\",
+      "outputPath": "D:\\Code\\DindPoint\\DindPoint.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rian.ardana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4680,11 +4676,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "V:\\Rian\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj": {
-              "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj"
+            "D:\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj": {
+              "projectPath": "D:\\Code\\DindPoint\\DindPoint.Application\\DindPoint.Application.csproj"
             },
-            "V:\\Rian\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj": {
-              "projectPath": "V:\\Rian\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj"
+            "D:\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj": {
+              "projectPath": "D:\\Code\\DindPoint\\DindPoint.Infrastructure\\DindPoint.Infrastructure.csproj"
             }
           }
         }
@@ -4716,11 +4712,11 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.*, )"
+            "version": "[8.0.25, )"
           },
           "Microsoft.Extensions.Caching.Memory": {
             "target": "Package",
-            "version": "[8.0.*, )"
+            "version": "[8.0.25, )"
           }
         },
         "imports": [
@@ -4747,6 +4743,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DindPoint.Web depends on Microsoft.Extensions.Caching.Memory (>= 8.0.25) but Microsoft.Extensions.Caching.Memory 8.0.25 was not found. An approximate best match of Microsoft.Extensions.Caching.Memory 9.0.0 was resolved.",
+      "libraryId": "Microsoft.Extensions.Caching.Memory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1603",
       "level": "Warning",
