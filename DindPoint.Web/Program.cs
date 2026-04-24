@@ -27,6 +27,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

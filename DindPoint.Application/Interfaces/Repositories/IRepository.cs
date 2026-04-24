@@ -32,5 +32,7 @@ namespace DindPoint.Application.Interfaces
             Expression<Func<T, bool>>? predicate = null,
             Expression<Func<T, object>>? orderBy = null,
             params string[] includeProperties);
+
+            Task<int> SaveChangesAsync();
     }
 }

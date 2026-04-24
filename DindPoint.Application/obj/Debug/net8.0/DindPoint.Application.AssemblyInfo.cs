@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DindPoint.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817edb44bf5340739d99b0413989db16b040744e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d8a06e4a19fed1cce0ea7fd052a052c57ab103f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DindPoint.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DindPoint.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

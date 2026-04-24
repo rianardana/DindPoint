@@ -95,5 +95,7 @@ namespace DindPoint.Infrastructure.Repositories
             
             return await query.ToListAsync();
         }
+
+        public async Task<int> SaveChangesAsync() => await _context.SaveChangesAsync();
     }
 }
