@@ -3,47 +3,77 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DindPoint.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - DindPoint</title>
+    
+    <!-- Tailwind Output -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/DindPoint.Web.styles.css" asp-append-version="true" />
+    
+    <!-- iziToast CSS -->
+    <link rel="stylesheet" href="~/lib/izitoast/css/iziToast.min.css" asp-append-version="true" />
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+            min-height: 100vh;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DindPoint.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+<body class="antialiased text-slate-700">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-purple-200 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                
+              <!-- Logo & Brand -->
+            <a asp-controller="Home" asp-action="Index" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
+                    <img src="~/images/point.png" alt="DindPoint" 
+                        style="width: 24px; height: 24px; object-fit: contain;" 
+                        asp-append-version="true" />
+                </div>
+                <span class="text-xl font-bold text-slate-800">DindPoint</span>
+            </a>
+
+                <!-- Right Side: Back to Home + User -->
+                <div class="flex items-center space-x-4">
+                    @if (ViewContext.RouteData.Values["controller"]?.ToString() != "Home")
+                    {
+                        <a asp-controller="Home" asp-action="Index" class="inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 transition-all">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            Home
+                        </a>
+                    }
+                    
+                    <!-- User Avatar Placeholder -->
+                    <div class="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center">
+                        <span class="text-xs font-semibold text-slate-600">U</span>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        </div>
+    </nav>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - DindPoint.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-purple-200 bg-white/60 backdrop-blur-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-sm text-slate-500">
+            &copy; 2026 - DindPoint. All rights reserved.
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/izitoast/js/iziToast.min.js" asp-append-version="true"></script>
+    
     @await RenderSectionAsync("Scripts", required: false)
+    @await Html.PartialAsync("_ToastNotification")
 </body>
 </html>

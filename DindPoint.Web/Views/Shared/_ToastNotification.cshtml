@@ -1,0 +1,74 @@
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            iziToast.success({
+                title: 'Berhasil!',
+                message: '@TempData["SuccessMessage"]',
+                position: 'topRight',
+                timeout: 4000,
+                close: true,
+                closeOnClick: true,
+                drag: true,
+                icon: 'ico-check',
+                transitionIn: 'fadeInRight',
+                transitionOut: 'fadeOutRight',
+                progressBar: true,
+                backgroundColor: '#10b981', // Tailwind success
+                titleColor: '#ffffff',
+                messageColor: '#ffffff',
+                iconColor: '#ffffff'
+            });
+        });
+    </script>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            iziToast.error({
+                title: 'Gagal!',
+                message: '@TempData["ErrorMessage"]',
+                position: 'topRight',
+                timeout: 5000,
+                close: true,
+                closeOnClick: true,
+                drag: true,
+                icon: 'ico-close',
+                transitionIn: 'fadeInRight',
+                transitionOut: 'fadeOutRight',
+                progressBar: true,
+                backgroundColor: '#ef4444', // Tailwind danger
+                titleColor: '#ffffff',
+                messageColor: '#ffffff',
+                iconColor: '#ffffff'
+            });
+        });
+    </script>
+}
+
+@if (TempData["InfoMessage"] != null)
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            iziToast.info({
+                title: 'Info',
+                message: '@TempData["InfoMessage"]',
+                position: 'topRight',
+                timeout: 4000,
+                close: true,
+                closeOnClick: true,
+                drag: true,
+                icon: 'ico-info',
+                transitionIn: 'fadeInRight',
+                transitionOut: 'fadeOutRight',
+                progressBar: true,
+                backgroundColor: '#2563eb', // Tailwind primary
+                titleColor: '#ffffff',
+                messageColor: '#ffffff',
+                iconColor: '#ffffff'
+            });
+        });
+    </script>
+}

@@ -16,9 +16,13 @@ public class MappingProfile : Profile
         CreateMap<RoleCreateDto, Role>();
         CreateMap<RoleUpdateDto, Role>();
         CreateMap<Role, RoleDto>();
+        CreateMap<RoleUpdateDto, Role>();
+        CreateMap<RoleDto, RoleUpdateDto>();
 
         CreateMap<DepartmentCreateDto, Department>();
         CreateMap<DepartmentUpdateDto, Department>();
         CreateMap<Department, DepartmentDto>();
+        CreateMap<DepartmentUpdateDto, Department>();
+        CreateMap<DepartmentDto, DepartmentUpdateDto>();
     }
 }

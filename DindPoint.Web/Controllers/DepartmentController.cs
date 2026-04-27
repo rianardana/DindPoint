@@ -1,14 +1,19 @@
-namespace DindPoint.Web.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 using DindPoint.Application.DTOs.Department;
 using DindPoint.Application.Interfaces;
-using Microsoft.AspNetCore.Mvc;
+
+namespace DindPoint.Web.Controllers;
+
 public class DepartmentController : Controller
 {
     private readonly IDepartmentService _departmentService;
+    private readonly IMapper _mapper;
 
-    public DepartmentController(IDepartmentService departmentService)
+    public DepartmentController(IDepartmentService departmentService, IMapper mapper)
     {
         _departmentService = departmentService;
+        _mapper = mapper;
     }
 
     public async Task<IActionResult> Index()
@@ -28,8 +33,18 @@ public class DepartmentController : Controller
     public async Task<IActionResult> Create(DepartmentCreateDto dto)
     {
         if (!ModelState.IsValid) return View(dto);
-        await _departmentService.CreateAsync(dto);
-        return RedirectToAction(nameof(Index));
+        
+        try
+        {
+            await _departmentService.CreateAsync(dto);
+            TempData["SuccessMessage"] = "Department berhasil ditambahkan.";
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Gagal menambahkan department: {ex.Message}";
+            return View(dto);
+        }
     }
 
     [HttpGet]
@@ -37,7 +52,9 @@ public class DepartmentController : Controller
     {
         var dept = await _departmentService.GetByIdAsync(id);
         if (dept == null) return NotFound();
-        return View(dept);
+        
+        // Map ke UpdateDto biar sesuai dengan View Model
+        return View(_mapper.Map<DepartmentUpdateDto>(dept));
     }
 
     [HttpPost]
@@ -45,16 +62,35 @@ public class DepartmentController : Controller
     public async Task<IActionResult> Edit(int id, DepartmentUpdateDto dto)
     {
         if (!ModelState.IsValid) return View(dto);
-        var result = await _departmentService.UpdateAsync(id, dto);
-        if (result == null) return NotFound();
-        return RedirectToAction(nameof(Index));
+        
+        try
+        {
+            var result = await _departmentService.UpdateAsync(id, dto);
+            if (result == null) return NotFound();
+            
+            TempData["SuccessMessage"] = "Department berhasil diperbarui.";
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Gagal memperbarui department: {ex.Message}";
+            return View(dto);
+        }
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        await _departmentService.DeleteAsync(id);
+        try
+        {
+            await _departmentService.DeleteAsync(id);
+            TempData["SuccessMessage"] = "Department berhasil dihapus.";
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"Gagal menghapus department: {ex.Message}";
+        }
         return RedirectToAction(nameof(Index));
     }
 }

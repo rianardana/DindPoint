@@ -1,14 +1,19 @@
-namespace DindPoint.Web.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 using DindPoint.Application.DTOs.Role;
 using DindPoint.Application.Interfaces;
-using Microsoft.AspNetCore.Mvc;
+
+namespace DindPoint.Web.Controllers;
+
 public class RoleController : Controller
 {
     private readonly IRoleService _roleService;
+    private readonly IMapper _mapper;
 
-    public RoleController(IRoleService roleService)
+    public RoleController(IRoleService roleService, IMapper mapper)
     {
         _roleService = roleService;
+        _mapper = mapper;
     }
 
     public async Task<IActionResult> Index()
@@ -18,43 +23,70 @@ public class RoleController : Controller
     }
 
     [HttpGet]
-    public IActionResult Create()
-    {
-        return View();
-    }
+    public IActionResult Create() => View();
 
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(RoleCreateDto dto)
     {
         if (!ModelState.IsValid) return View(dto);
-        await _roleService.CreateAsync(dto);
-        return RedirectToAction(nameof(Index));
+        
+        try
+        {
+            await _roleService.CreateAsync(dto);
+            TempData["SuccessMessage"] = "Role berhasil ditambahkan.";
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = "Gagal menambahkan role: " + ex.Message;
+            return View(dto);
+        }
     }
+
 
     [HttpGet]
     public async Task<IActionResult> Edit(int id)
     {
         var role = await _roleService.GetByIdAsync(id);
         if (role == null) return NotFound();
-        return View(role);
+        return View(_mapper.Map<RoleUpdateDto>(role));
     }
 
-    [HttpPost]
+  [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, RoleUpdateDto dto)
     {
         if (!ModelState.IsValid) return View(dto);
-        var result = await _roleService.UpdateAsync(id, dto);
-        if (result == null) return NotFound();
-        return RedirectToAction(nameof(Index));
+        
+        try
+        {
+            var result = await _roleService.UpdateAsync(id, dto);
+            if (result == null) return NotFound();
+            
+            TempData["SuccessMessage"] = "Role berhasil diperbarui.";
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = "Gagal memperbarui role: " + ex.Message;
+            return View(dto);
+        }
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        await _roleService.DeleteAsync(id);
+        try
+        {
+            await _roleService.DeleteAsync(id);
+            TempData["SuccessMessage"] = "Role berhasil dihapus.";
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = "Gagal menghapus role: " + ex.Message;
+        }
         return RedirectToAction(nameof(Index));
     }
 }
