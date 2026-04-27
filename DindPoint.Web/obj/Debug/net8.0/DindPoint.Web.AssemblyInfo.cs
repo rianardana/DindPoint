@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DindPoint.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d8a06e4a19fed1cce0ea7fd052a052c57ab103f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bba6cced074d9a8c9d9079f0a8bbf839764c65f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DindPoint.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DindPoint.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
