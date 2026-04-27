@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\images\\point.png",
+      "PackagePath": "staticwebassets\\images\\point.png"
+    },
+    {
       "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -199,6 +203,22 @@
     {
       "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\izitoast\\css\\iziToast.css",
+      "PackagePath": "staticwebassets\\lib\\izitoast\\css\\iziToast.css"
+    },
+    {
+      "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\izitoast\\css\\iziToast.min.css",
+      "PackagePath": "staticwebassets\\lib\\izitoast\\css\\iziToast.min.css"
+    },
+    {
+      "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\izitoast\\js\\iziToast.js",
+      "PackagePath": "staticwebassets\\lib\\izitoast\\js\\iziToast.js"
+    },
+    {
+      "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\izitoast\\js\\iziToast.min.js",
+      "PackagePath": "staticwebassets\\lib\\izitoast\\js\\iziToast.min.js"
     },
     {
       "Id": "D:\\Code\\DindPoint\\DindPoint.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

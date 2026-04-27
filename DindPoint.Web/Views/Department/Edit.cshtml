@@ -1,0 +1,56 @@
+@model DindPoint.Application.DTOs.Department.DepartmentUpdateDto
+@{ ViewData["Title"] = "Edit Department"; }
+
+<div class="min-h-screen bg-slate-50 py-8">
+    <div class="container mx-auto px-4 max-w-2xl">
+        <div class="mb-8">
+            <a asp-action="Index" class="inline-flex items-center text-sm text-slate-500 hover:text-slate-700 transition-colors mb-4">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Back to Departments
+            </a>
+            <h2 class="text-2xl font-bold text-slate-800">Edit Department</h2>
+            <p class="text-slate-500 text-sm mt-1">Perbarui detail departemen dan status aktif/nonaktif.</p>
+        </div>
+
+        <div class="card">
+            <form asp-action="Edit" class="space-y-6">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="DepartmentName" class="label-field">Department Name <span class="text-red-500">*</span></label>
+                    <input asp-for="DepartmentName" class="input-field" />
+                    <span asp-validation-for="DepartmentName" class="text-red-500 text-xs mt-1 block"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="HeadOfDepartmentId" class="label-field">Head of Department (User ID)</label>
+                    <input asp-for="HeadOfDepartmentId" type="number" class="input-field" />
+                    <span asp-validation-for="HeadOfDepartmentId" class="text-red-500 text-xs mt-1 block"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ParentDepartmentId" class="label-field">Parent Department (Optional)</label>
+                    <input asp-for="ParentDepartmentId" type="number" class="input-field" />
+                    <span asp-validation-for="ParentDepartmentId" class="text-red-500 text-xs mt-1 block"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="flex items-center">
+                        <input asp-for="IsActive" class="h-4 w-4 text-primary border-slate-300 rounded focus:ring-primary" />
+                        <label asp-for="IsActive" class="ml-3 block text-sm font-medium text-slate-700">Active Department</label>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-2 ml-7">When disabled, this department will be marked as inactive.</p>
+                </div>
+
+                <div class="flex items-center justify-end gap-3 pt-6 border-t border-slate-200">
+                    <a asp-action="Index" class="btn-secondary">Cancel</a>
+                    <button type="submit" class="btn-primary">Update Department</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

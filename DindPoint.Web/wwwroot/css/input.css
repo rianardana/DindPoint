@@ -35,4 +35,35 @@
     .badge-danger { @apply bg-red-100 text-red-800; }
     .badge-warning { @apply bg-amber-100 text-amber-800; }
     .badge-primary { @apply bg-blue-100 text-blue-800; }
+        .table-container {
+        @apply bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden;
+    }
+
+    .table-header {
+        @apply bg-slate-50 border-b border-slate-200 px-6 py-4 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider;
+    }
+
+    .table-row {
+        @apply border-b border-slate-100 hover:bg-slate-50 transition-colors duration-200 last:border-b-0;
+    }
+
+    .table-cell {
+        @apply px-6 py-4 whitespace-nowrap text-sm text-slate-600;
+    }
+
+    .table-cell-header {
+        @apply text-slate-500;
+    }
+
+    .action-btn {
+        @apply inline-flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-200;
+    }
+    
+    .action-btn-edit {
+        @apply text-blue-600 bg-blue-50 hover:bg-blue-100 hover:scale-105;
+    }
+
+    .action-btn-delete {
+        @apply text-red-600 bg-red-50 hover:bg-red-100 hover:scale-105;
+    }
 }
